@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-const { readTasks, writeTasks } = require('../utils/fileHandler');
+const { readData, writeData } = require('../utils/fileHandler');
 
 async function addTask() {
   const answers = await inquirer.prompt([
@@ -26,7 +26,7 @@ async function addTask() {
   // read current todos
   // push new task (with a status: "pending", and unique ID or index)
   // save back to JSON
-  const tasks = readTasks();
+  const tasks = readData();
   const newTask = {
     id: tasks.length + 1,
     title: answers.title,
@@ -36,7 +36,7 @@ async function addTask() {
   };
 
   tasks.push(newTask);
-  writeTasks(tasks);
+  writeData(tasks);
 
   console.log('✅ Task added successfully!');
 }

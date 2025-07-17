@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "project proposal submission",
+    "description": "need to submit project proposal to the PM by next week",
+    "priority": "Medium",
+    "status": "pending"
+  },
+  {
+    "id": 2,
+    "title": "kss session",
+    "description": "need to prepare slides for my upcoming kss session",
+    "priority": "High",
+    "status": "pending"
+  },
+  {
+    "id": 3,
+    "title": "visit dentist",
+    "description": "dentist appointment on friday",
+    "priority": "High",
+    "status": "pending",
+    "completed": true
+  }
+]
